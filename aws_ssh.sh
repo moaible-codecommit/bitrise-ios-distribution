@@ -6,4 +6,6 @@ Host git-codecommit.*.amazonaws.com\n\
 User $GP_AWS_SSH_KEY_ID\n\
 IdentityFile ~/.ssh/id_rsa\n\
 " > ~/.ssh/config
-chmod +x ~/.ssh/config
+chmod 0600 ~/.ssh/id_rsa
+chmod 0600 ~/.ssh/id_rsa.pub
+chmod 0600 ~/.ssh/config
